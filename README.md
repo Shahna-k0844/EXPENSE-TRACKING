@@ -6,7 +6,7 @@ A Django REST Framework API for tracking expenses with user authentication, cate
 Python 3.13
 SQLite
 
-#Design Choices:
+# Design Choices:
 Database Schema
 Category Model:
 
