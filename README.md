@@ -1,12 +1,12 @@
 Expense Tracker API
 A Django REST Framework API for tracking expenses with user authentication, category management, and monthly summary reports.
 
-Setup Instructions:
+# Setup Instructions:
 
 Python 3.13
 SQLite
 
-Design Choices:
+#Design Choices:
 Database Schema
 Category Model:
 
@@ -27,7 +27,7 @@ description: Optional text field for expense details
 
 date: DateField with auto_now_add for creation timestamp
 
-Key Design Decisions:
+# Key Design Decisions:
 
 Decimal for amounts: Avoids floating-point precision issues
 
@@ -37,10 +37,10 @@ Foreign keys: Maintains relational integrity between expenses, users, and catego
 
 Indexing: Django automatically indexes foreign keys for better performance
 
-Assumptions:
+# Assumptions:
 User Authentication: Currently uses basic user_id passing for simplicity; production would require proper authentication
 
-# Implementation example
+Implementation example:
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.permissions import IsAuthenticated
 
